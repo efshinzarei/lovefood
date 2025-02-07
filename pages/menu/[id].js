@@ -8,7 +8,7 @@ function Detailes({ data }) {
   if (router.isFallback) {
     return <h2>Loading Page...</h2>;
   }
-
+  
   return <DetailsPage {...data} />;
 }
 
