@@ -37,12 +37,12 @@ export async function getStaticProps(context) {
 
   if (!data.id) {
     return {
-      notFound: true,
+      notFound: false,
     };
   }
 
   return {
     props: { data },
-    revalidate: 1 * 60 * 60, // seconds
+    revalidate: +process.env.REVALIDATE, // seconds
   };
 }
