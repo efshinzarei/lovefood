@@ -1,8 +1,7 @@
 import CategoriesPage from "@/components/templates/CategoriesPage";
 
 function Categoris({ data }) {
-  console.log(data);
-  return <CategoriesPage />;
+  return <CategoriesPage data={data} />;
 }
 
 export default Categoris;
