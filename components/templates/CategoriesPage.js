@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-import styles from "./Categories.module.css";
 import Card from "../modules/Card";
+
+import styles from "./CategoriesPage.module.css";
 
 function CategoriesPage({ data }) {
   const router = useRouter();
